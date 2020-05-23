@@ -1,0 +1,489 @@
+html, body, figure {
+    height: 100%;
+    background-color: #D5D95B;
+    z-index: -5;
+    font-family: 'cwTeXYen', sans-serif;
+}
+p{
+    color: #001C02;
+}
+title{
+    background-color: #D5D95B;
+}
+#id_wrapper {
+    min-height: 100%;
+    position: relative;
+}
+#id_footer {
+    height: 5%;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color:#AEBF2A ;
+    display: block;
+    text-align: center;
+}
+#id_boxcard{
+    border-color: #A66953;
+    border-style: solid;
+    border-width: 6px;
+
+    width:80% ;
+    height:75%;
+    position:absolute;
+    top: 10%;
+    left: 10%;
+    background-color:#F2F2F2 ;
+    z-index: 1;
+}
+.selfie img{
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 20%;
+    height: auto;
+    border-radius: 50%;
+    border: 5px solid #D99B66 ;
+    margin-top: -8%;
+    margin-left: -15%;
+}
+
+
+
+li{
+    position: relative;
+    list-style:none;
+    margin: 50px 0;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-left: -10%;
+    transition: .3s;
+    color: #001C02;
+
+}
+li:hover{
+    color: #467302;
+}
+li:before{
+    content: "";
+    position: absolute;
+    top: calc(100% + 10px);
+    left: 0;
+    width: 100%;
+    height: 15px;
+    background-color: #D5D95B;
+    border-radius: 1000px;
+    opacity: 0.5;
+}
+li:after{
+    content: "";
+    position: absolute;
+    top: calc(100% + 10px);
+    left: 0;
+    width: 0%;
+    height: 15px;
+    background-color: #AEBF2A;
+    border-radius: 1000px;
+    animation-duration: .7s;
+    opacity: 1;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+}
+li.html:after{
+    animation-name: html;
+}
+@keyframes html{
+    to{
+        width: 90%;
+
+    }
+}
+
+li.css:after{
+    animation-name: css;
+}
+@keyframes css{
+    to{
+        width: 70%;
+        
+    }
+}
+li.js:after{
+    animation-name: js;
+}
+@keyframes js{
+    to{
+        width: 50%;
+        
+    }
+}
+li.sql:after{
+    animation-name: sql;
+}
+@keyframes sql{
+    to{
+        width: 60%;
+        
+    }
+}
+
+li.c:after{
+    animation-name: c;
+}
+@keyframes c{
+    to{
+        width: 40%;
+        
+    }
+}
+li.java:after{
+    animation-name: java;
+}
+@keyframes java{
+    to{
+        width: 40%;
+        
+    }
+}
+li.ai:after{
+    animation-name: ai;
+}
+@keyframes ai{
+    to{
+        width: 85%;
+        
+    }
+}
+li.prem:after{
+    animation-name: prem;
+}
+@keyframes prem{
+    to{
+        width: 75%;
+        
+    }
+}
+li.tab:after{
+    animation-name: tab;
+}
+@keyframes tab{
+    to{
+        width: 60%;
+        
+    }
+}
+li.ableton:after{
+    animation-name: ableton;
+}
+@keyframes ableton{
+    to{
+        width: 40%;
+        
+    }
+}
+
+.contactbox{
+    width: 5%;
+    height: 55%;
+    background-color: #D99B66;
+    position: absolute;
+    top: 30%;
+    left: 0%;
+    margin: 20px auto 0;
+    padding: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    opacity: 0.7;
+}
+.contactbox:hover{
+    width: 5%;
+    height: 55%;
+    background-color: #D99B66;
+    position: absolute;
+    top: 30%;
+    left: 0%;
+    margin: 20px auto 0;
+    padding: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    opacity: 1;
+}
+.contactbox img{
+    position: relative;
+    top: 0%;
+    left: 0%;
+    width: 60%;
+    height: auto;
+    padding: 20%;
+    padding-top: 40%;
+    opacity: 0.5;
+    transition: .7s;
+}
+.contactbox img:hover{
+    position: relative;
+    top: 0%;
+    left: 0%;
+    width: 60%;
+    height: auto;
+    padding: 20%;
+    padding-top: 40%;
+    opacity: 1;
+}
+
+.stage{
+    width: 40%;
+    height: 25%;
+    background-color: #D9F2B3;
+    position: absolute;
+    top: 8%;
+    left: 15%;
+    border-radius: 10px;
+    transition: .7s;
+    opacity: 1;
+    z-index: 1;
+}
+.stage p{
+    position: absolute;
+    font-weight: 700;
+    font-size: 40px;
+    top: -10%;
+    left: 13%;
+    color: #001C02;
+    letter-spacing: 2px;
+    opacity: 1;
+}
+
+.stage:hover{
+    transform: scale(1,-1);
+    opacity: 0;
+}
+.stage2{
+    width: 40%;
+    height: 25%;
+    background-color: #D9F2B3;
+    position: absolute;
+    top: 8%;
+    left: 15%;
+    border-radius: 10px;
+    transition: .7s;
+    opacity: 1;
+    z-index: 0;
+}
+.stage2 span{
+    position: absolute;
+    font-weight: 500;
+    font-size: 25px;
+    top: 25%;
+    left: 5%;
+    color: #001C02;
+    letter-spacing: 3px;
+    opacity: 1;
+    z-index: 0;
+}
+.TimeLine{
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    top: 40%;
+    left: 10%;
+    z-index: 1;
+}
+.TimeLine hr{
+    width: 95%;
+    position: absolute;
+    border: 0;
+    height: 5px;
+    background-image: linear-gradient(to right, #D99B66, #A66953, #D99B66);
+    z-index: 1;
+}
+.circle{
+    width:20px;
+    height:20px;
+    border-radius:999em;
+    background-color:#D5D95B;
+    z-index: 1;
+    position: absolute;
+    border: 2px solid #AEBF2A ;
+}
+.act1{
+    width: 20%;
+    height: 60%;
+    background-color: #E5F2C9;
+    position: absolute;
+    border-radius: 3px;
+    border: 3px #AEBF2A solid;
+    z-index: -1;
+}
+.act1 p{
+    text-align: center;
+    font-weight: 500;
+    font-size: 25px;
+    color: #001C02;
+}
+.act2{
+    width: 20%;
+    height: 60%;
+    background-color: #D5D95B;
+    position: absolute;
+    border-radius: 3px;
+    border: 3px #D99B66 solid;
+    z-index: -1;
+}
+.act2 p{
+    text-align: center;
+    font-weight: 500;
+    font-size: 25px;
+    padding-top: 30%;
+    color: #001C02;
+}
+.lightbox{
+    display: none;
+}
+
+.lightbox:target {
+  position: absolute;
+  left: 30%;
+  top: -70%;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 6;
+}
+
+/* Lightbox content */
+.lightbox figcaption {
+  width: 1000px;
+  position: relative;
+  height: 500px;
+  background-color: #D99B66;
+}
+
+/* Close button */
+.lightbox .close {
+  position: relative;
+  display: block;
+}
+
+.lightbox .close::after {
+  right: -1rem;
+  top: -1rem;
+  width: 2rem;
+  height: 2rem;
+  position: absolute;
+  display: flex;
+  z-index: 3;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  border-radius: 50%;
+  color: white;
+  content: "×";
+  cursor: pointer;
+}
+
+/* Lightbox overlay */
+.lightbox .close::before {
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background-color: rgba(0,0,0,.7);
+  content: "";
+  cursor: pointer;
+}
+.click{
+    width: 80%;
+    height: auto;
+    position: absolute;
+    left: 10%;
+    top: 50%;
+    z-index: 1;
+    opacity: .5;
+    transition: .7s;
+}
+.click:hover{
+    opacity: 1;
+}
+.Photo{
+    width: auto;
+    height: 100%;
+    position: absolute;
+}
+.Photo2{
+    width: 100%;
+    height:auto;
+    position: absolute;
+    top: 2.5%;
+}
+.campP{
+    position: absolute;
+    font-weight: 500px;
+    font-size: 25px;
+    text-align: left;
+    right: 2%;
+    top: 2%;
+    width: 20%;
+    height: auto;
+    color: #001C02;
+}
+
+
+.flip3D{ 
+    width:430px; 
+    height:500px; 
+    margin:10px; 
+    float:left; 
+    position: absolute;
+    left: 61%;
+    top: 5%;
+}
+.flip3D > .front{
+    position:absolute;
+    transform: perspective( 600px ) rotateY( 0deg );
+    background:none; width:430px; height:500px; border-radius: 7px;
+    backface-visibility: hidden;
+    transition: transform .5s linear 0s;
+}
+.flip3D > .back{
+    position:absolute;
+    transform: perspective( 600px ) rotateY( 180deg );
+    background: none; width:430px; height:500px; border-radius: 7px;
+    backface-visibility: hidden;
+    transition: transform .5s linear 0s;
+}
+.flip3D:hover > .front{
+    transform: perspective( 600px ) rotateY( -180deg );
+}
+.flip3D:hover > .back{
+    transform: perspective( 600px ) rotateY( 0deg );
+}
+.skillContainer {
+    width: 90%;
+    background-color: none;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    margin: 10px auto 0;
+    padding: 10px;
+    border-color: #D99B66;
+    border-style: solid;
+    border-width: 3px;
+}
+.skillContainer p{
+    position: absolute;
+    font-weight: 600;
+    font-size: 30px;
+    top: -5%;
+    left: 3%;
+
+}
+/* Color Theme Swatches in Hex 
+-businessman-consider-applicant-cv-1-hex { color: #AEBF2A; }
+-businessman-consider-applicant-cv-2-hex { color: #D5D95B; }
+-businessman-consider-applicant-cv-3-hex { color: #D99B66; }
+-businessman-consider-applicant-cv-4-hex { color: #A66953; }
+-businessman-consider-applicant-cv-5-hex { color: #F2F2F2; }
+*/             
